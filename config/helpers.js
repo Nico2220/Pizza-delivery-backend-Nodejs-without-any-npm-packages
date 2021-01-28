@@ -83,7 +83,7 @@ helpers.payment = (amount, callback) => {
     protocol: "https:",
     hostname: "api.stripe.com",
     path: "/v1/charges",
-    auth: "sk_test_4eC39HqLyjWDarjtT1zdp7dc:",
+    auth: "api-key:",
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
@@ -127,16 +127,13 @@ helpers.sendEmail = (email, msg, callback) => {
   const requestDetails = {
     protocol: "https:",
     hostname: "api.mailgun.net",
-    path: "/v3/sandboxc198aa378d02467c85eea5cca4aaf910.mailgun.org/messages",
+    path: "/v3/Your Domain /messages",
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
       "Content-Length": Buffer.byteLength(stringPayload),
       Authorization:
-        "Basic " +
-        Buffer.from(
-          "api:" + "3d065343a26ca710aeffd49d7ae60a19-07bc7b05-8399c760"
-        ).toString("base64"),
+        "Basic " + Buffer.from("api:" + "Your api-key").toString("base64"),
     },
   };
 
