@@ -9,3 +9,6 @@ The HTTPS Server run on [http://localhost:3001] (http://localhost:3001)
 Production environment
 The HTTP Server run on [http://localhost:5000] (http://localhost:3000).
 The HTTPS Server run on [http://localhost:5001] (http://localhost:3001)
+
+API documentation: (https://documenter.getpostman.com/view/11838840/TW6xm7jn
+)
